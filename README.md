@@ -81,3 +81,19 @@ optee-secure-image-signing/
 This repository contains only the core source code for the client application and Trusted Application.
 
 Build artifacts, generated signatures, and temporary files are excluded using `.gitignore`.
+
+## Demo
+
+### Signing and Verification
+
+Original image verification:
+```text
+Signature verification SUCCESS
+```
+
+Tampered image verification:
+```text
+Signature verification FAILED
+```
+
+The verification process recomputes the SHA-256 hash of the image and checks the RSA-2048 signature using the exported public key.
