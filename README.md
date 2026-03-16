@@ -16,6 +16,7 @@ The generated signature is returned to the REE and can be verified using OpenSSL
 - Support for verifying one image or multiple images
 
 ## System Architecture
+```text
 Client Application (REE)
 │
 │ send image
@@ -32,8 +33,10 @@ Signature returned to REE
 
 ▼
 OpenSSL verification (REE)
-
+```
 ## Project Structure
+
+```text
 optee-secure-image-signing/
 ├─ README.md
 ├─ LICENSE
@@ -53,7 +56,7 @@ optee-secure-image-signing/
 ├─ Makefile
 └─ include
 └─ save_pic_ta.h
-
+```
 ## Workflow
 
 ### 1. Signing (TEE)
