@@ -1,1 +1,28 @@
+# ===== Build artifacts =====
+*.o
+*.a
+*.so
+*.elf
+*.ta
 
+# ===== Signature / crypto outputs =====
+*.sig
+*.bin
+*.pem
+
+# ===== Temporary / logs =====
+*.log
+*.tmp
+
+# ===== Editor files =====
+*.swp
+*~
+.DS_Store
+
+# ===== IDE =====
+.vscode/
+.idea/
+
+# ===== Build directories =====
+build/
+out/
